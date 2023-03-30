@@ -1,6 +1,0 @@
-neovim -> ir ate nvim/lua/packer-config/init.lua executar o comando :PackerSync, 
-depois e so sair e ser feliz
-
-zsh -> adicionar o nome do tema em ZSH_THEME = "spaceship"e das extensoes em  plugins (zsh-autosuggestions fast-syntax-highlighting) no arquivo .zshrc
-
-docker -> adicionar a docker no $PATCH

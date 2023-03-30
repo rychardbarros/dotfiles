@@ -117,17 +117,6 @@ map ctrl+p	         	increase_font_size
 map ctrl+o	         	decrease_font_size" >> kitty.conf
 
 cd
-sudo apt install zsh -y
-echo -n "precione qualquer tecla para instalr o oh-my-zsh e suas extensoes"
-read TECLA
-chsh -s /bin/zsh
-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
-  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
 
 sudo apt-get update
 
@@ -148,16 +137,10 @@ sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-sudo groupadd docker
-echo -n "digite o nome do seu usuario, oque aparece depois do /area de trabalho ou /home"
-read USUARIO
-
-sudo usermod -aG docker $USUARIO
-
-newgrp docker
-
 echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ default all" \
     | sudo tee -a /etc/apt/sources.list.d/insomnia.list
 
 sudo apt update
 sudo apt-get install insomnia
+
+sudo apt install zsh -y
