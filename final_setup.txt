@@ -1,4 +1,4 @@
-neovim -> ir ate nvim/lua/packer-config/init.lua executar o comando :PackerSync, depois e so sair e ser feliz
+neovim -> ir ate ~/.config/nvim/lua/packer-config/init.lua executar o comando :PackerSync, depois e so sair e ser feliz
 
 zsh -> opicional (extensoes) (altamente recomendavel): 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
