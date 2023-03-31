@@ -1,1 +1,4 @@
 # dotfiles
+
+Installation of dependencies:
+
